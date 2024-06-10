@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Tutorial 04</title>
+<style>
+    #p{background-color: chartreuse;}
+    #s{background-color: coral;}
+    #m{background-color: cyan;}
+    legend{font-weight: bold; background-color:white;}
+    .section{display: flex; }
+    .section label{width: 150px;}
+    .section input[type="password"]{width: 400px;}
+    .section input{margin-bottom: 5px;}
+    .section textarea{margin-top: 5px;}
+    .section input[type="radio"]{margin-bottom: 20px;}
+    .buttons{display: flex; justify-content: flex-end;}
+    .buttons input{margin-left: 5px; background-color: brown; color: yellow;padding: 10px 20px; border-radius: 20px; border: 2px solid #000;}
+    fieldset{padding: 10px 20px; border-radius: 20px; border: 2px solid #000;}
+    body{background-image:url(bg1.jpg);}
+
+    
+    
+    
+    
+
+</style>
+</head>
+
+<body>
+    
+<fieldset id="p">
+    <legend>Personal Details</legend>
+    <form>
+        <div class="section"|>
+            <label for="fname">First name</label>
+            <input type="text" name="First name" id="fname" placeholder="Enter your first name">
+        </div>
+
+        <div class="section">
+            <label for="sname"> Surname</label>
+            <input type="text" name="Surname" id="sname" placeholder="Enter your surname">
+        </div>
+
+        <div class="section">
+            <label for="email">Email address</label>
+            <input type="email" name="Email address" id="email">
+        </div>
+
+        <div class="section"|>
+            <label for="password" >Setup a password</label>
+            <input type="password" name="Set up a password" id="password" placeholder="Min 8 characters, use at least 1 caps, no special characters">
+        </div>
+
+    </form>
+</fieldset>
+<br>
+
+<fieldset id="s">
+    <legend>Booking Details</legend>
+    <form>
+        <div class="section">
+            <label for="checkin">Checkin day</label>
+            <input type="date" name="date" id="checkin" value="2023-02-14">
+        </div>
+
+        <div class="section">
+            <label for="ndays">Number of days</label>
+            <input type="number" name="ndays" id="ndays">
+        </div>
+        <div class="section">
+            <label for="sroom">Single Room</label>
+            <input type="radio" name="room" id="sroom">
+        </div>
+        <div class="section">
+            <label for="droom">Double Room</label>
+            <input type="radio" name="room" id="droom">
+        </div>
+        <div class="section">
+            <label for="kroom">King Room</label>
+            <input type="radio" name="room" id="kroom">
+        </div>
+
+        <div class="section">
+            <label for="Breakfast"> Breakfast</label>
+            <select name="Breakfast" id="Breakfast">
+                <option  value="Stringhoppers">String hoppers</option>
+                <option value="Idly">Idly</option>
+                <option value="Cake">Cake</option>
+                <option value="Rotti">Rotti</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <label for="sq">Special Requirements</label>
+        
+            <textarea id="sq" name="comments" row="5" cols="20" placeholder="Please provide any special requirements"></textarea>
+        </div>
+        
+        
+
+
+    </form>
+</fieldset>
+<br>
+
+
+<fieldset id="m">
+    <form>
+        <div class="buttons">
+        <input type="reset" name="Reset" id="reset">
+        <input type="submit" name="Send" id="submit" value="Send">
+        </div>
+    </form>
+</fieldset>
+</body>
+</html>
+    
